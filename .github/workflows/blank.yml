@@ -1,0 +1,18 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  my_arm_job:
+    runs-on: ubuntu-18.04
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up QEMU
+      uses: docker/setup-qemu-action@v1
+    - run: |
+        docker run --rm -i -v $PWD:/ws arm32v7/ubuntu:18.04 bash << EOF
+        set -xeu
+        cd /ws
+        uname -a
+        apt update
+        EOF
