@@ -25,8 +25,8 @@ jobs:
       - name: Confirm Python version
         run: python --version
 
-      - name: Build blasfeo
-        run:
+      - name: Build-install blasfeo
+        run: |
           git clone https://github.com/giaf/blasfeo.git
           cd blasfeo
           make shared_library -j 4 && sudo make install_shared
