@@ -1,0 +1,26 @@
+name: test_laptopc
+
+on:
+  push:
+    branches: [ "main" ]
+    paths-ignore:
+      - '*.md'
+  pull_request:
+    branches: [ "main" ]
+    paths:
+        - ".github/workflows/test_laptoppc_.yaml"
+
+jobs:
+  build:
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Python 3.12.3
+        uses: actions/setup-python@v5
+        with:
+          python-version: 3.12.3
+
+      - name: Confirm Python version
+        run: python --version
