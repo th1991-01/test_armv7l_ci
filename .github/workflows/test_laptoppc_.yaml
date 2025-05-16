@@ -25,6 +25,12 @@ jobs:
       - name: Confirm Python version
         run: python --version
 
+      - name: Pip Install using requirements
+        run: |
+         pwd
+         ls
+          pip install -r requirements_py312_local_pc.txt
+
       - name: Build-install blasfeo
         run: |
           git clone https://github.com/giaf/blasfeo.git
