@@ -1,0 +1,28 @@
+APScheduler==3.10.4
+casadi==3.6.7
+cycler==0.12.1
+fonttools==4.55.2
+# hpipm-python==0.2
+joblib==1.4.2
+kiwisolver==1.4.7
+# m3io_py==0.7
+matplotlib==3.5.2
+numpy==1.26.4
+packaging==24.2
+pandas==2.2.3
+pillow==11.0.0
+psutil==6.1.0
+pymodbus==3.6.9
+pyparsing==3.2.0
+python-dateutil==2.9.0.post0
+pytz==2024.2
+PyYAML==6.0.2
+pyzmq==26.2.0
+scikit-learn==1.5.2
+scipy==1.14.1
+setuptools==75.6.0
+setuptools-scm==8.1.0
+six==1.17.0
+threadpoolctl==3.5.0
+tzdata==2024.2
+tzlocal==5.2
